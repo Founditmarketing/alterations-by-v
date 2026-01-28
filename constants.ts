@@ -12,7 +12,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'suiting',
     title: 'Suit Resizing & Tailoring',
     description: 'Modernize the fit of your favorite suit. We specialize in shoulder narrowing, sleeve shortening (with functional buttonholes), and tapering trousers for a contemporary silhouette.',
-    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4729d7?q=80&w=800&auto=format&fit=crop',
+    image: '/menssuit.png',
     priceRange: 'Starts at $45'
   },
   {
@@ -26,7 +26,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'denim',
     title: 'Denim & Casual Repair',
     description: 'Expert denim alteration using original hem techniques to maintain the designer wash. We also replace zippers, patch tears, and tailor leather jackets.',
-    image: 'https://images.unsplash.com/photo-1542272454324-597826194280?q=80&w=800&auto=format&fit=crop',
+    image: '/denim.png',
     priceRange: 'Starts at $25'
   }
 ];

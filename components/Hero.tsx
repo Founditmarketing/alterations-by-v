@@ -13,9 +13,9 @@ const Hero: React.FC<HeroProps> = ({ onExplore, onConsult, onFAQ }) => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2560&auto=format&fit=crop"
+          src="/alterationsheader.png"
           alt="Alterations by V Storefront Exterior"
-          className="w-full h-full object-cover object-center scale-105 animate-[pulse_10s_ease-in-out_infinite_alternate]" 
+          className="w-full h-full object-cover object-center scale-105 animate-[pulse_10s_ease-in-out_infinite_alternate]"
           style={{ animationDuration: '25s' }}
         />
         <div className="absolute inset-0 bg-stone-900/30 mix-blend-multiply"></div>
@@ -25,13 +25,13 @@ const Hero: React.FC<HeroProps> = ({ onExplore, onConsult, onFAQ }) => {
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
         <div className="mb-6 animate-fade-in flex flex-col items-center">
-            <span className="h-[1px] w-12 bg-amber-400 mb-4 block"></span>
-            <span className="text-amber-400 tracking-[0.2em] uppercase text-xs md:text-sm font-semibold max-w-md leading-relaxed">
+          <span className="h-[1px] w-12 bg-amber-400 mb-4 block"></span>
+          <span className="text-amber-400 tracking-[0.2em] uppercase text-xs md:text-sm font-semibold max-w-md leading-relaxed">
             The Premier Seamstress for all of Central Louisiana
-            </span>
-            <span className="h-[1px] w-12 bg-amber-400 mt-4 block"></span>
+          </span>
+          <span className="h-[1px] w-12 bg-amber-400 mt-4 block"></span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif text-white mb-6 leading-tight animate-fade-in drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
           Alterations <br />
           <span className="italic text-stone-100 font-light">by V</span>
@@ -41,19 +41,19 @@ const Hero: React.FC<HeroProps> = ({ onExplore, onConsult, onFAQ }) => {
         </p>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <button 
+          <button
             onClick={onExplore}
             className="px-8 py-3 bg-white text-stone-900 font-medium tracking-widest hover:bg-stone-200 transition-colors duration-300 min-w-[180px]"
           >
             OUR SERVICES
           </button>
-          <button 
+          <button
             onClick={onConsult}
             className="px-8 py-3 border border-white text-white font-medium tracking-widest hover:bg-white hover:text-stone-900 transition-colors duration-300 min-w-[180px] backdrop-blur-sm"
           >
             BOOK FITTING
           </button>
-          <button 
+          <button
             onClick={onFAQ}
             className="px-8 py-3 border border-stone-500 text-stone-200 font-medium tracking-widest hover:border-white hover:text-white transition-colors duration-300 min-w-[180px] backdrop-blur-sm hover:bg-stone-900/50"
           >
