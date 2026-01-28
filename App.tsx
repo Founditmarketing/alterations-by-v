@@ -20,21 +20,21 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 selection:bg-amber-200 selection:text-stone-900 pt-[100px] md:pt-[76px]">
       <Navbar onNavigate={scrollToSection} />
-      
+
       <main>
-        <Hero 
-            onExplore={() => scrollToSection('services')} 
-            onConsult={() => scrollToSection('contact')} 
-            onFAQ={() => scrollToSection('faq')}
+        <Hero
+          onExplore={() => scrollToSection('services')}
+          onConsult={() => scrollToSection('contact')}
+          onFAQ={() => scrollToSection('faq')}
         />
-        <Services />
+        <Services onConsult={() => scrollToSection('contact')} />
         <About />
         <FAQ />
         <Testimonials />
         <Contact />
       </main>
 
-      <Footer />
+      <Footer onNavigate={scrollToSection} />
       <AtelierChat />
     </div>
   );
