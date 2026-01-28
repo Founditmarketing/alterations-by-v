@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onExplore, onConsult, onFAQ }) => {
   return (
-    <section id="hero" className="relative h-screen w-full overflow-hidden">
+    <section id="hero" className="relative min-h-screen md:h-screen w-full overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ onExplore, onConsult, onFAQ }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+      <div className="relative z-10 h-full flex flex-col justify-start pt-36 pb-20 md:justify-center md:pt-0 md:pb-0 items-center text-center px-4">
         <div className="mb-6 animate-fade-in flex flex-col items-center">
           <span className="h-[1px] w-12 bg-amber-400 mb-4 block"></span>
           <span className="text-amber-400 tracking-[0.2em] uppercase text-xs md:text-sm font-semibold max-w-md leading-relaxed">
