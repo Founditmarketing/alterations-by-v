@@ -63,8 +63,8 @@ const Hero: React.FC<HeroProps> = ({ onExplore, onConsult, onFAQ }) => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70">
-        <ArrowDown size={24} />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70">
+        <ArrowDown size={24} className="animate-bounce" />
       </div>
     </section>
   );
